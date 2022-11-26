@@ -4,7 +4,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className="profile">
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
+        <img src={avatar} alt="User avatar" className="avatar" width="130" />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
@@ -33,5 +33,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
