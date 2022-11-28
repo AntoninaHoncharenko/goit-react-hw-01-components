@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types';
-import { ProfileCard } from './Profile.styled';
-import { UserInfo } from './Profile.styled';
-import { ImgWrap } from './Profile.styled';
-import { UserName } from './Profile.styled';
-import { UserTag } from './Profile.styled';
-import { UserLocation } from './Profile.styled';
-import { UserStatList } from './Profile.styled';
-import { UserStatItem } from './Profile.styled';
-import { StatLabel } from './Profile.styled';
-import { StatQuantity } from './Profile.styled';
+import {
+  ProfileCard,
+  UserInfo,
+  ImgWrap,
+  UserName,
+  UserTag,
+  UserLocation,
+  UserStatList,
+  UserStatItem,
+  StatLabel,
+  StatQuantity,
+} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (

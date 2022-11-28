@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
-import { StatsBox } from './Statistics.styled';
-import { StatsTitle } from './Statistics.styled';
-import { StatsList } from './Statistics.styled';
-import { StatsItem } from './Statistics.styled';
-import { StatsLabel } from './Statistics.styled';
-import { StatsPercent } from './Statistics.styled';
+import {
+  StatsBox,
+  StatsTitle,
+  StatsList,
+  StatsItem,
+  StatsLabel,
+  StatsPercent,
+} from './Statistics.styled';
 
 export const Statistic = ({ title, stats }) => {
   return (

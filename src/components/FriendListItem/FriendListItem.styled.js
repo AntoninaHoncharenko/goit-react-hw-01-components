@@ -8,7 +8,6 @@ export const FriendsItem = styled.li`
   background-color: lightgray;
   border-radius: 8px;
   margin: 0 auto;
-  /* position: relative; */
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -25,14 +24,15 @@ export const FriendName = styled.p`
   font-weight: 600;
 `;
 
-export const IsFriendOnline = styled.span`
+export const IsFriendOnline = styled.span(
+  props => `
   ::before {
     content: '';
     display: block;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: red;
     margin-left: 20px;
-  }
-`;
+    background-color: ${props.isOnline ? 'green' : 'red'};
+`
+);
